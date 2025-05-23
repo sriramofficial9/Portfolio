@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri Ram Relangi - AI Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav id="navbar">
         <div class="container">
-            <a href="#" class="nav-logo">SRR</a>
+            <a href="#hero" class="nav-logo">SRR_AI</a>
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -23,213 +23,261 @@
         </div>
     </nav>
 
-    <header id="hero">
+    <header id="hero" class="full-page-section">
+        <!-- Suggested Background: Abstract neural network, glowing data streams, or futuristic digital landscape -->
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Sri Ram Relangi</h1>
-            <p class="subtitle">Generative AI & Machine Learning Engineer</p>
+            <h1 class="glitch" data-text="Sri Ram Relangi">Sri Ram Relangi</h1>
+            <p class="subtitle">Innovating at the Intersection of Generative AI & Machine Learning</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/sri-ram-relangi/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:sriramroy99@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <!-- Add GitHub if you have one -->
                 <!-- <a href="YOUR_GITHUB_LINK_HERE" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
             </div>
-            <a href="#about" class="cta-button">Discover More</a>
+            <a href="#about" class="cta-button">Explore My Work <i class="fas fa-arrow-right"></i></a>
         </div>
     </header>
 
-    <section id="about" class="section">
+    <section id="about" class="section content-section">
+        <!-- Suggested Background: Subtle geometric pattern or clean, light texture -->
         <div class="container">
             <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
             <div class="about-content">
-                <p>
-                    Innovative and results-driven Generative AI and Machine Learning Engineer with 4 years of experience delivering high-impact AI
-                    solutions across NLP, computer vision, and real estate applications. I have proven expertise in developing scalable models and
-                    automating workflows that enhance business efficiency, accuracy, and growth. Passionate about pushing the boundaries of AI
-                    to solve complex real-world problems.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="container">
-            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
-                    <div class="timeline-content">
-                        <h3>Generative AI Engineer - Data Scientist</h3>
-                        <p class="company-date">Visual Technologies, Dallas, USA | Jul 2024 - Present</p>
-                        <ul>
-                            <li>Designed advanced generative AI models (GPT-4, Stable Diffusion, RAG), boosting content generation efficiency by 70% & contextual accuracy by 35%.</li>
-                            <li>Developed custom prompt engineering, optimizing LLM effectiveness by 50% for translation, code generation, and conversational AI.</li>
-                            <li>Implemented scalable RAG pipelines (Pinecone, FAISS), reducing query response by 40% & enhancing retrieval accuracy by 30%.</li>
-                            <li>Built multimodal generative AI solutions (vision transformers, text encoders, diffusion models), improving content quality by 60%.</li>
-                            <li>Integrated AI frameworks (Hugging Face, OpenAI, LangChain), automating 95% user interactions & reducing overhead by 25%.</li>
-                            <li>Deployed ML models via Amazon SageMaker endpoints for real-time/batch inference.</li>
-                        </ul>
-                    </div>
+                <div class="about-image">
+                    <!-- Replace with a professional photo or an abstract AI graphic representing you -->
+                    <img src="https://via.placeholder.com/300x300?text=Your+Professional+Photo" alt="Sri Ram Relangi">
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
-                    <div class="timeline-content">
-                        <h3>Data Scientist</h3>
-                        <p class="company-date">Prosway, Memphis, USA | Aug 2024 - Oct 2024 (Likely a typo, assuming previous year or end date adjustment, e.g. Aug 2023 - Oct 2023 or Aug 2022 - Oct 2022. I will use Aug 2023 - Oct 2023 for now. Please correct this!)</p>
-                        <ul>
-                            <li>Engineered a real estate recommender system achieving 75% prediction accuracy for hedge funds.</li>
-                            <li>Architected Firebase data storage for property records, decision logs, and metadata.</li>
-                            <li>Developed RESTful APIs with REAPI for automated data acquisition, reducing manual intervention by 60%.</li>
-                            <li>Optimized backend (Flask, PostgreSQL, AWS) reducing latency by 40%; trained models on SageMaker, improving accuracy by 30%.</li>
-                            <li>Optimized ML models for cost/performance using Elastic Inference & SageMaker Autopilot.</li>
-                            <li>Managed end-to-end ML pipelines with AWS Step Functions & SageMaker Pipelines.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-university"></i></div>
-                    <div class="timeline-content">
-                        <h3>Graduate Assistant - Machine learning & Big Data</h3>
-                        <p class="company-date">University of North Texas, Denton, USA | Jul 2023 - May 2024</p>
-                        <ul>
-                            <li>Accelerated student success by 30% via interactive ML/Big Data coursework.</li>
-                            <li>Guided students, increasing research paper quality by 25%; pioneered curriculum with Hadoop, Spark, TensorFlow, boosting AI/data job placements by 20%.</li>
-                            <li>Automated ETL tasks (Python), reducing manual work by 30%, improving task completion by 50%.</li>
-                            <li>Created Tableau visualizations enhancing decision-making by 20%; conducted generative AI & deep learning analysis.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
-                    <div class="timeline-content">
-                        <h3>Data Scientist - Programmer Analyst</h3>
-                        <p class="company-date">Cognizant Technology Solutions, Chennai, India | Dec 2020 - Jul 2022</p>
-                        <ul>
-                            <li>Developed automation (Java, Selenium) for CC&B billing, reducing manual errors by 70%.</li>
-                            <li>Optimized SQL for 1M+ records, improving query speed by 40%; reduced billing discrepancies by 20%.</li>
-                            <li>Designed/deployed scalable ML solutions in AWS (SageMaker, Lambda, EC2, ECS/EKS).</li>
-                            <li>Implemented ETL processes, optimizing database performance & loading speed by 75%.</li>
-                            <li>Crafted Tableau dashboards enhancing revenue recovery by 10%.</li>
-                        </ul>
-                    </div>
-                </div>
-                 <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-satellite-dish"></i></div>
-                    <div class="timeline-content">
-                        <h3>Machine Learning Intern</h3>
-                        <p class="company-date">Indian Institute of Remote Sensing, Dehradun, India | Sep 2020 - Nov 2020</p>
-                        <ul>
-                            <li>Developed ML models for geospatial trend prediction, improving accuracy by 30% (GeoPandas, scikit-learn).</li>
-                            <li>Implemented spatial data processing pipelines (TensorFlow, QGIS), enhancing location-based predictions by 25%.</li>
-                        </ul>
-                    </div>
+                <div class="about-text">
+                    <p>
+                        A results-driven Generative AI and Machine Learning Engineer with 4 years of experience, I specialize in crafting high-impact AI solutions across NLP, computer vision, and real estate. My expertise lies in developing scalable models and automating complex workflows to drive business efficiency, accuracy, and growth. I'm passionate about leveraging cutting-edge AI to transform industries and solve challenging real-world problems.
+                    </p>
+                    <p>Currently shaping the future of AI at Visual Technologies, I thrive on continuous learning and pushing the boundaries of what's possible in artificial intelligence.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="experience" class="section full-page-section experience-bg">
+        <!-- Suggested Background: Dark, abstract tech background - e.g., data flows, circuit lines -->
+        <div class="section-overlay"></div>
         <div class="container">
-            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <h2><i class="fas fa-briefcase"></i> Professional Journey</h2>
+            <div class="experience-grid">
+                <!-- Visual Technologies -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="https://via.placeholder.com/80x80?text=VT+Logo" alt="Visual Technologies Logo" class="company-logo">
+                        <div>
+                            <h3>Generative AI Engineer - Data Scientist</h3>
+                            <p class="company-date">Visual Technologies, Dallas, USA | Jul 2024 - Present</p>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Pioneered advanced GenAI models (GPT-4, Stable Diffusion, RAG), boosting content efficiency by 70% & accuracy by 35%.</li>
+                        <li>Engineered custom prompt strategies, optimizing LLM effectiveness by 50% for diverse applications.</li>
+                        <li>Deployed scalable RAG pipelines (Pinecone, FAISS), cutting query times by 40% & improving retrieval by 30%.</li>
+                        <li>Built multimodal GenAI solutions, enhancing content quality by 60% for creative industries.</li>
+                        <li>Integrated AI frameworks (Hugging Face, OpenAI, LangChain), automating 95% user interactions.</li>
+                    </ul>
+                </div>
+
+                <!-- Prosway -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="https://via.placeholder.com/80x80?text=Prosway+Logo" alt="Prosway Logo" class="company-logo">
+                        <div>
+                            <h3>Data Scientist</h3>
+                            <p class="company-date">Prosway, Memphis, USA | Aug 2023 - Oct 2023 (Please Verify Dates)</p>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed a high-precision real estate recommender (75% accuracy) for hedge fund investments.</li>
+                        <li>Architected Firebase data storage for efficient portfolio analysis and real-time synchronization.</li>
+                        <li>Built robust RESTful APIs, reducing manual data acquisition by 60%.</li>
+                        <li>Optimized backend infrastructure (Flask, PostgreSQL, AWS), reducing latency by 40%.</li>
+                        <li>Managed end-to-end ML pipelines on SageMaker, improving model accuracy by 30%.</li>
+                    </ul>
+                </div>
+
+                 <!-- University of North Texas -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                         <img src="https://via.placeholder.com/80x80?text=UNT+Logo" alt="UNT Logo" class="company-logo">
+                        <div>
+                            <h3>Graduate Assistant - ML & Big Data</h3>
+                            <p class="company-date">University of North Texas, Denton, USA | Jul 2023 - May 2024</p>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Accelerated student success by 30% through interactive ML/Big Data coursework.</li>
+                        <li>Guided student projects, increasing research paper quality by 25% and job placements by 20%.</li>
+                        <li>Automated ETL tasks, reducing manual workload by 30% and improving completion time by 50%.</li>
+                    </ul>
+                </div>
+
+                <!-- Cognizant -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                         <img src="https://via.placeholder.com/80x80?text=CTS+Logo" alt="Cognizant Logo" class="company-logo">
+                        <div>
+                            <h3>Data Scientist - Programmer Analyst</h3>
+                            <p class="company-date">Cognizant, Chennai, India | Dec 2020 - Jul 2022</p>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Revolutionized CC&B billing with automation (Java, Selenium), reducing errors by 70%.</li>
+                        <li>Optimized SQL for 1M+ records, boosting query speed by 40%.</li>
+                        <li>Deployed scalable AWS ML solutions (SageMaker, Lambda, EC2, ECS/EKS).</li>
+                    </ul>
+                </div>
+                 <!-- IIRS -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                         <img src="https://via.placeholder.com/80x80?text=IIRS+Logo" alt="IIRS Logo" class="company-logo">
+                        <div>
+                            <h3>Machine Learning Intern</h3>
+                            <p class="company-date">Indian Institute of Remote Sensing, India | Sep 2020 - Nov 2020</p>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed ML models for geospatial trend prediction, improving accuracy by 30%.</li>
+                        <li>Implemented spatial data pipelines, enhancing location-based predictions by 25%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section content-section">
+        <!-- Suggested Background: Blueprint-style grid or abstract data visualization -->
+        <div class="container">
+            <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Medical Chatbot Development</h3>
-                    <p>Leveraged LLMs, Pinecone, and LangChain for context-driven medical insights and enhanced patient interaction.</p>
-                    <p class="tech-stack"><strong>Tech:</strong> LLM, Pinecone, LangChain, NLP</p>
+                     <img src="https://via.placeholder.com/300x180?text=Medical+Chatbot+UI" alt="Medical Chatbot Project" class="project-image">
+                    <div class="project-content">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Medical Chatbot Development</h3>
+                        <p>Leveraged LLMs, Pinecone, and LangChain for context-driven medical insights and enhanced patient interaction.</p>
+                        <p class="tech-stack"><strong>Tech:</strong> LLM, Pinecone, LangChain, NLP</p>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-language"></i></div>
-                    <h3>Language Translation System</h3>
-                    <p>Engineered a real-time mobile app translation system for 20+ languages, boosting user engagement by ~18%.</p>
-                    <p class="tech-stack"><strong>Tech:</strong> OpenNMT, Transformers, NLP</p>
+                     <img src="https://via.placeholder.com/300x180?text=Language+App+Mockup" alt="Language Translation Project" class="project-image">
+                     <div class="project-content">
+                        <div class="project-icon"><i class="fas fa-language"></i></div>
+                        <h3>Language Translation System</h3>
+                        <p>Engineered a real-time mobile app translation system for 20+ languages, boosting user engagement by ~18%.</p>
+                        <p class="tech-stack"><strong>Tech:</strong> OpenNMT, Transformers, NLP</p>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Generative AI Application</h3>
-                    <p>Devised an LLM app using Google Gemini Pro, LangChain, FAISS for semantic PDF search, with a Streamlit UI. Engineered backend for text extraction, chunking, and vector embedding.</p>
-                    <p class="tech-stack"><strong>Tech:</strong> Google Gemini Pro, LangChain, FAISS, Streamlit, Hugging Face</p>
+                     <img src="https://via.placeholder.com/300x180?text=GenAI+App+Interface" alt="Generative AI Application" class="project-image">
+                    <div class="project-content">
+                        <div class="project-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Generative AI Application</h3>
+                        <p>Devised an LLM app using Google Gemini Pro, LangChain, FAISS for semantic PDF search, with a Streamlit UI.</p>
+                        <p class="tech-stack"><strong>Tech:</strong> Gemini, LangChain, FAISS, Streamlit</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="section">
+    <section id="skills" class="section full-page-section skills-bg">
+         <!-- Suggested Background: Glowing network lines or digital particle effects -->
+        <div class="section-overlay"></div>
         <div class="container">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <div class="education-item">
-                <h3>Masters in Artificial Intelligence (GPA: 3.9/4)</h3>
-                <p>University of North Texas, Denton, USA</p>
+            <h2><i class="fas fa-tools"></i> Core Competencies</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h4>AI & Machine Learning</h4>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Generative AI</span><span class="skill-tag">LLMs</span><span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">Stable Diffusion</span><span class="skill-tag">GPT-4/OpenAI API</span><span class="skill-tag">Gemini</span>
+                        <span class="skill-tag">Prompt Engineering</span><span class="skill-tag">Vector Databases</span><span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span><span class="skill-tag">Reinforcement Learning</span>
+                        <span class="skill-tag">TensorFlow</span><span class="skill-tag">Keras</span><span class="skill-tag">PyTorch</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Languages & Databases</h4>
+                     <div class="skills-grid">
+                        <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Pinecone</span><span class="skill-tag">FAISS</span><span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Firebase</span> <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud & DevOps</h4>
+                     <div class="skills-grid">
+                        <span class="skill-tag">AWS</span><span class="skill-tag">SageMaker</span><span class="skill-tag">EC2</span><span class="skill-tag">S3</span>
+                        <span class="skill-tag">Lambda</span><span class="skill-tag">RDS</span><span class="skill-tag">Step Functions</span>
+                        <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                 <div class="skill-category">
+                    <h4>Frameworks & Tools</h4>
+                     <div class="skills-grid">
+                        <span class="skill-tag">LangChain</span><span class="skill-tag">Hugging Face</span><span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Pandas</span><span class="skill-tag">Numpy</span><span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">JIRA</span><span class="skill-tag">Streamlit</span><span class="skill-tag">Agile/SDLC</span>
+                    </div>
+                </div>
             </div>
-             <!-- Add other education if any -->
         </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="education-certs" class="section content-section">
         <div class="container">
-            <h2><i class="fas fa-tools"></i> Skills</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">SQL</span>
-                <span class="skill-tag">TensorFlow</span><span class="skill-tag">Keras</span><span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">OpenAI API</span><span class="skill-tag">Hugging Face</span><span class="skill-tag">LangChain</span>
-                <span class="skill-tag">Generative AI</span><span class="skill-tag">LLMs</span><span class="skill-tag">RAG</span>
-                <span class="skill-tag">Stable Diffusion</span><span class="skill-tag">GPT-4</span><span class="skill-tag">Gemini</span>
-                <span class="skill-tag">Prompt Engineering</span><span class="skill-tag">Vector Databases</span>
-                <span class="skill-tag">Pinecone</span><span class="skill-tag">FAISS</span><span class="skill-tag">AWS</span>
-                <span class="skill-tag">SageMaker</span><span class="skill-tag">EC2</span><span class="skill-tag">S3</span>
-                <span class="skill-tag">Lambda</span><span class="skill-tag">RDS</span><span class="skill-tag">Step Functions</span>
-                <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span><span class="skill-tag">CI/CD</span>
-                <span class="skill-tag">Flask</span><span class="skill-tag">ETL</span><span class="skill-tag">NLP</span>
-                <span class="skill-tag">Computer Vision</span><span class="skill-tag">Pandas</span><span class="skill-tag">Numpy</span>
-                <span class="skill-tag">Tableau</span><span class="skill-tag">Data Visualization</span><span class="skill-tag">Git</span>
-                <span class="skill-tag">Agile</span><span class="skill-tag">SDLC</span><span class="skill-tag">Machine Learning</span>
+            <div class="two-column-layout">
+                <div class="column">
+                    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="education-item">
+                        <h3>Masters in Artificial Intelligence (GPA: 3.9/4)</h3>
+                        <p>University of North Texas, Denton, USA</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-check-circle"></i> Microsoft Python Certified</li>
+                        <li><i class="fas fa-check-circle"></i> Oracle Cloud Implementation (OCI) - Accenture</li>
+                        <li><i class="fas fa-check-circle"></i> AWS Fundamentals Training - Technical Hub</li>
+                        <li><i class="fas fa-check-circle"></i> Data Science Orientation - Coursera</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="achievements-section">
+                <h2><i class="fas fa-trophy"></i> Achievements</h2>
+                <ul class="achievements-list">
+                    <li><i class="fas fa-award"></i> Accenture Pinnacle Award: For exceptional client service and production support.</li>
+                    <li><i class="fas fa-users"></i> Organized departmental events, including an awards ceremony for 250+ attendees.</li>
+                    <li><i class="fas fa-graduation-cap"></i> Received 80% Computer Science Graduate Tuition Waiver for academic excellence.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="section">
+    <section id="contact" class="section full-page-section contact-bg">
+        <!-- Suggested Background: Abstract connections, global network map -->
+        <div class="section-overlay"></div>
         <div class="container">
-            <h2><i class="fas fa-certificate"></i> Certifications</h2>
-            <ul>
-                <li>Microsoft Python Certified</li>
-                <li>Oracle Cloud Implementation (OCI) by ULS (Accenture)</li>
-                <li>AWS Fundamentals Training by Technical Hub</li>
-                <li>Data Science Orientation Issued by Coursera</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="achievements" class="section">
-        <div class="container">
-            <h2><i class="fas fa-trophy"></i> Achievements</h2>
-            <ul>
-                <li>Accenture Pinnacle Award: For exceeding client requirements and continuous production support.</li>
-                <li>Organized and volunteered for departmental events, including an awards ceremony for 250+ attendees.</li>
-                <li>Received Computer Science Graduate Tuition Waiver (80%) for academic and research excellence.</li>
-                <li>Proven experience in machine learning and natural language processing.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
-            <p>I'm always excited to discuss new projects, innovative ideas, or opportunities in AI. Feel free to reach out!</p>
+            <h2><i class="fas fa-paper-plane"></i> Let's Connect</h2>
+            <p class="contact-intro">I'm passionate about leveraging AI to solve complex challenges. If you have an interesting project, an innovative idea, or an opportunity, I'd love to hear from you.</p>
             <div class="contact-methods">
                 <a href="mailto:sriramroy99@gmail.com" class="contact-button"><i class="fas fa-envelope"></i> Email Me</a>
                 <a href="https://www.linkedin.com/in/sri-ram-relangi/" target="_blank" class="contact-button"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <p class="phone"><i class="fas fa-phone"></i> +1 (214) 399-4707</p>
-                 <!-- <a href="YOUR_RESUME_LINK_HERE.pdf" target="_blank" class="contact-button"><i class="fas fa-file-pdf"></i> Download Resume</a> -->
+                <!-- <a href="YOUR_RESUME_LINK_HERE.pdf" target="_blank" class="contact-button"><i class="fas fa-file-pdf"></i> Download Resume</a> -->
             </div>
+            <p class="phone-contact"><i class="fas fa-phone-alt"></i> +1 (214) 399-4707</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© <span id="currentYear"></span> Sri Ram Relangi. All rights reserved.
-                <br>Crafted with <i class="fas fa-heart" style="color: #4FC3F7;"></i> for AI innovation.
+            <p>© <span id="currentYear"></span> Sri Ram Relangi. Pioneering AI Solutions.
+                <br>Designed with <i class="fas fa-atom" style="color: var(--accent-cyan);"></i> and a passion for innovation.
             </p>
         </div>
     </footer>
