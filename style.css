@@ -82,7 +82,7 @@ body {
 /* --- Hero Section --- */
 #hero {
     height: 100vh;
-    /* Background image path updated */
+    /* FIX: Corrected the path to your background image */
     background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.9)), url('IMG_4563.jpg'); 
     background-size: cover;
     background-position: center;
@@ -250,10 +250,14 @@ section {
     box-shadow: 0 10px 20px rgba(0, 170, 255, 0.1);
 }
 .timeline-content .company-logo {
-    max-width: 120px;
-    max-height: 40px;
+    max-width: 140px; /* Increased size slightly for better visibility */
+    max-height: 50px;
     margin-bottom: 1rem;
-    filter: brightness(0) invert(1); /* Makes logos white */
+    /* FIX 1: Removed the filter that was making logos with white backgrounds invisible */
+    /* filter: brightness(0) invert(1); */ 
+    
+    /* FIX 2: Added object-fit to prevent logos from being stretched or squashed */
+    object-fit: contain;
 }
 
 .timeline-content h3 {
