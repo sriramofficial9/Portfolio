@@ -1,17 +1,15 @@
-/* === THEME & VARIABLES === */
+/* === THEME & VARIABLES (NEW: CHARCOAL & AMBER) === */
 :root {
-    --dark-navy: #0A192F;
-    --navy: #112240;
-    --light-navy: #233554;
-    --lightest-navy: #303C55;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --bg-color: #161616; /* Deep Charcoal */
+    --card-color: #1E1E1E; /* Lighter Charcoal for cards */
+    --border-color: #2c2c2c;
+    --shadow-color: rgba(0, 0, 0, 0.7);
     
-    --slate: #8892B0;
-    --light-slate: #A8B2D1;
-    --lightest-slate: #CCD6F6;
+    --text-primary: #EAEAEA; /* Soft, bright white for headings */
+    --text-secondary: #999999; /* Light gray for body text */
     
-    --accent-color: #64FFDA; /* Vibrant Teal */
-    --accent-tint: rgba(100, 255, 218, 0.1);
+    --accent-color: #FFC300; /* Vibrant Amber/Gold */
+    --accent-tint: rgba(255, 195, 0, 0.1);
 
     --font-sans: 'Poppins', sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
@@ -33,8 +31,8 @@ html {
 
 body {
     font-family: var(--font-sans);
-    background-color: var(--dark-navy);
-    color: var(--slate);
+    background-color: var(--bg-color);
+    color: var(--text-secondary);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
@@ -55,7 +53,7 @@ section {
     justify-content: center;
     gap: 1rem;
     font-size: clamp(1.8rem, 5vw, 2.5rem);
-    color: var(--lightest-slate);
+    color: var(--text-primary);
     margin-bottom: 4rem;
     font-weight: 600;
 }
@@ -64,7 +62,7 @@ section {
     display: block;
     width: 200px;
     height: 1px;
-    background-color: var(--lightest-navy);
+    background-color: var(--border-color);
 }
 
 /* === NAVIGATION === */
@@ -73,12 +71,12 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(10, 25, 47, 0.85);
+    background-color: rgba(22, 22, 22, 0.85);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     transition: var(--transition);
-    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+    box-shadow: 0 10px 30px -10px var(--shadow-color);
 }
 .navbar .container {
     display: flex;
@@ -92,7 +90,7 @@ section {
     text-decoration: none;
 }
 .nav-logo span {
-    color: var(--lightest-slate);
+    color: var(--text-primary);
 }
 .nav-links {
     list-style: none;
@@ -104,7 +102,7 @@ section {
     font-family: var(--font-mono);
 }
 .nav-links a {
-    color: var(--lightest-slate);
+    color: var(--text-primary);
     text-decoration: none;
     transition: var(--transition);
 }
@@ -115,36 +113,42 @@ section {
 /* === HERO SECTION === */
 #hero {
     height: 100vh;
-    /* FIX: The overlay gradient is now much more transparent to reveal the background image.
-       It fades from 60% opacity at the top to 85% at the bottom, making you visible. */
+    /* FIX: Aligned content to the bottom and added padding to reveal your portrait */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10vh;
+    
+    /* FIX: New gradient overlay is much more transparent at the top and only darkens at the bottom */
     background-image:
-        linear-gradient(to bottom, rgba(10, 25, 47, 0.6) 0%, rgba(10, 25, 47, 0.85) 100%),
+        linear-gradient(180deg, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.4) 60%, rgba(22, 22, 22, 0.9) 100%),
         url('IMG_4563.jpg');
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+}
+.hero-content {
+    /* FIX: Aligned text to the left for a cleaner, modern look */
+    text-align: left;
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 2rem;
 }
 .hero-content h1 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-size: clamp(2.8rem, 8vw, 5.5rem);
     font-weight: 700;
-    /* FIX: Brighter text color for better contrast against the revealed image. */
-    color: var(--lightest-slate);
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 .hero-content p {
     font-size: clamp(1.2rem, 4vw, 1.5rem);
-    /* FIX: Brighter subtitle color for better contrast. */
-    color: var(--light-slate);
+    color: var(--text-secondary);
     margin-bottom: 2rem;
     font-weight: 400;
 }
 .hero-contact a {
-    color: var(--light-slate);
+    color: var(--text-secondary);
     font-size: 1.5rem;
-    margin: 0 1rem;
+    margin-right: 1.5rem;
     transition: var(--transition);
 }
 .hero-contact a:hover {
@@ -170,7 +174,7 @@ section {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: var(--lightest-navy);
+    background-color: var(--border-color);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -187,7 +191,7 @@ section {
     width: 16px;
     height: 16px;
     right: -8px;
-    background-color: var(--dark-navy);
+    background-color: var(--bg-color);
     border: 3px solid var(--accent-color);
     top: 30px;
     border-radius: 50%;
@@ -198,14 +202,14 @@ section {
 .timeline-item.right::after { left: -8px; }
 .timeline-content {
     padding: 1.5rem;
-    background-color: var(--navy);
+    background-color: var(--card-color);
     border-radius: var(--border-radius);
     transition: var(--transition);
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    box-shadow: 0 10px 30px -15px var(--shadow-color);
 }
 .timeline-content:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 30px -15px var(--navy-shadow);
+    box-shadow: 0 20px 30px -15px var(--shadow-color);
 }
 .company-logo {
     max-width: 120px;
@@ -214,7 +218,7 @@ section {
     object-fit: contain;
 }
 .timeline-content h3 {
-    color: var(--lightest-slate);
+    color: var(--text-primary);
     font-size: 1.2rem;
 }
 .timeline-content h4 {
@@ -226,7 +230,7 @@ section {
 .timeline-content .date {
     font-size: 0.85rem;
     font-family: var(--font-mono);
-    color: var(--slate);
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 .timeline-content ul {
@@ -252,12 +256,12 @@ section {
     gap: 1.5rem;
 }
 .skill-category {
-    background: var(--navy);
+    background: var(--card-color);
     padding: 2rem;
     border-radius: var(--border-radius);
 }
 .skill-category h3 {
-    color: var(--lightest-slate);
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
     font-weight: 600;
 }
@@ -275,8 +279,8 @@ section {
     gap: 0.75rem;
 }
 .skill-item {
-    background: var(--light-navy);
-    color: var(--light-slate);
+    background: var(--bg-color);
+    color: var(--text-secondary);
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius);
     font-size: 0.9rem;
@@ -290,20 +294,20 @@ section {
     gap: 1.5rem;
 }
 .project-card {
-    background: var(--navy);
+    background: var(--card-color);
     padding: 2rem;
     border-radius: var(--border-radius);
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    box-shadow: 0 10px 30px -15px var(--shadow-color);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
 }
 .project-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0 20px 30px -15px var(--navy-shadow);
+    box-shadow: 0 20px 30px -15px var(--shadow-color);
 }
 .project-card h3 {
-    color: var(--lightest-slate);
+    color: var(--text-primary);
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -325,10 +329,10 @@ section {
     gap: 0.75rem;
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    color: var(--slate);
+    color: var(--text-secondary);
 }
 .project-tech-stack span {
-    background-color: var(--light-navy);
+    background-color: var(--bg-color);
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
 }
@@ -360,7 +364,7 @@ section {
     gap: 1.5rem;
 }
 .footer-socials a {
-    color: var(--slate);
+    color: var(--text-secondary);
     font-size: 1.5rem;
     transition: var(--transition);
 }
@@ -372,7 +376,7 @@ section {
     margin-top: 2rem;
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    color: var(--slate);
+    color: var(--text-secondary);
 }
 
 /* === ANIMATIONS === */
