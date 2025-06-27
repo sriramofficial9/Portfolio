@@ -82,8 +82,8 @@ body {
 /* --- Hero Section --- */
 #hero {
     height: 100vh;
-    /* TODO: REPLACE 'background.jpg' WITH YOUR IMAGE FILE */
-    background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.9)), url('background.jpg'); 
+    /* Background image path updated */
+    background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.9)), url('IMG_4563.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
