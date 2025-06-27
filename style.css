@@ -115,7 +115,8 @@ section {
 /* === HERO SECTION === */
 #hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 1)), url('./IMG_4563.jpg');
+    /* FIX: Corrected path to be relative to the HTML file location. Removed the './' */
+    background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 1)), url('IMG_4563.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -247,13 +248,21 @@ section {
 }
 .skill-category {
     background: var(--navy);
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: var(--border-radius);
 }
 .skill-category h3 {
-    color: var(--accent-color);
+    color: var(--lightest-slate);
     margin-bottom: 1.5rem;
     font-weight: 600;
+}
+.skill-category h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-top: 8px;
+    background-color: var(--accent-color);
 }
 .skills-list {
     display: flex;
